@@ -1,8 +1,8 @@
 # PyBetterThreads
 
-[![Downloads](https://static.pepy.tech/badge/betterthread)](https://pepy.tech/project/betterthread)
+[![Downloads](https://static.pepy.tech/badge/pybetterthreads)](https://pepy.tech/project/pybetterthreads)
 [![PyPi](https://img.shields.io/pypi/v/PyBetterThreads.svg)](https://pypi.python.org/pypi/PyBetterThreads)
-[![License](https://img.shields.io/github/license/theAbdoSabbagh/PyBetterThreads.svg?color=black)](https://github.com/theAbdoSabbagh/PyBetterThreads/main/LICENSE)
+[![License](https://img.shields.io/github/license/theAbdoSabbagh/PyBetterThreads.svg?color=black)](https://github.com/theAbdoSabbagh/PyBetterThreads/blob/main/LICENSE)
 
 PyBetterThreads is a Python library for adding more features to the threading module in Python. 
 
