@@ -28,8 +28,23 @@ thread = BetterThread(target=my_function)
 thread.start()
 thread.connect(print)
 ```
+The above code will print "Hello, World!" after 5 seconds, as once the thread is finished, the returned value will passed to the `print` function. The returned value of the thread will be stored in the `value` attribute of the thread.
 
-The above code will print "Hello, World!" after 5 seconds, as once the thread is finished, the returned value will passed to the `print` function.
+You can also use the `join` method to wait for the thread to finish and get the returned value, instead of connecting a function to the thread:
+```python
+from BetterThreads import BetterThread
+from time import sleep
+
+def my_function():
+    sleep(5)
+    return "Hello, World!"
+
+thread = BetterThread(target=my_function)
+thread.start()
+thread.join()
+print(f"The thread returned: {thread.value}")
+```
+The above code will print "Hello, World!" after 5 seconds, as once the thread is finished, the returned value will be stored in the `value` attribute of the thread.
 
 ## Features
 - [x] Return values from threads
