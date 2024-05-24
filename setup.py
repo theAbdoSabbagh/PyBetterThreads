@@ -11,15 +11,15 @@ with open("README.md") as f:
     readme = f.read()
 
 setup(
-    name="BetterThreads",
+    name="PyBetterThreads",
     author="theAbdoSabbagh",
-    url="https://github.com/theAbdoSabbagh/BetterThreads",
+    url="https://github.com/theAbdoSabbagh/PyBetterThreads",
     project_urls={
-        "Documentation": "https://github.com/theAbdoSabbagh/BetterThreads/blob/main/README.md",
-        "Issue tracker": "https://github.com/theAbdoSabbagh/BetterThreads/issues",
+        "Documentation": "https://github.com/theAbdoSabbagh/PyBetterThreads/blob/main/README.md",
+        "Issue tracker": "https://github.com/theAbdoSabbagh/PyBetterThreads/issues",
     },
     version="0.0.1",
-    packages=["BetterThreads"],
+    packages=["PyBetterThreads"],
     license="MIT",
     description="Threads, but with more features!",
     long_description=readme,
