@@ -26,10 +26,10 @@ def my_function():
 
 thread = BetterThread(target=my_function)
 thread.start()
-thread.finished.connect(print)
+thread.connect(print)
 ```
 
-The above code will print "Hello, World!" after 5 seconds, as once the therad is finished, the returned value will passed to the `print` function.
+The above code will print "Hello, World!" after 5 seconds, as once the thread is finished, the returned value will passed to the `print` function.
 
 ## Features
 - [x] Return values from threads
