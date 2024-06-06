@@ -18,7 +18,7 @@ setup(
         "Documentation": "https://github.com/theAbdoSabbagh/PyBetterThreads/blob/main/README.md",
         "Issue tracker": "https://github.com/theAbdoSabbagh/PyBetterThreads/issues",
     },
-    version="0.0.2",
+    version="0.0.3",
     packages=["PyBetterThreads"],
     license="MIT",
     description="Threads, but with more features!",
