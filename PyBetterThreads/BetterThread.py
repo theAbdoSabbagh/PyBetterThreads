@@ -2,11 +2,11 @@ from typing import Callable, Optional, Any, List, Dict
 from threading import Thread
 
 class BetterThread:
-    def __init__(self, target: Callable[..., Any], args: Optional[List] = None, kwargs: Optional[Dict] = None):
+    def __init__(self, target: Callable[..., Any], daemon = True, args: Optional[List] = None, kwargs: Optional[Dict] = None):
         self.target = target
         self.args = args if args is not None else []
         self.kwargs = kwargs if kwargs is not None else {}
-        self._thread = Thread(target=self._middleman_function)
+        self._thread = Thread(target=self._middleman_function, daemon=daemon)
         self._callback = None
         self.value = None
 
